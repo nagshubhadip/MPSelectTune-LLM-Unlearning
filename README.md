@@ -6,6 +6,9 @@ Official code for the paper:
 > Unlearning in LLMs**
 > Shubhadip Nag, Srinjoy Das, Agniva Saha, Anushree Ghosh, Soumi Das,
 > Tarun Kumar, Suparna Bhattacharya, Sourangshu Bhattacharya.
+>
+> **Venue:** NeurIPS 2025 — Reliable ML from Unreliable Data Workshop.
+> **Paper:** https://openreview.net/forum?id=Jk8sOL97Tg
 
 ## Overview
 
@@ -57,8 +60,17 @@ accuracy measured by the **spuriousness-score** metric.
 │   ├── mmlu_results.json
 │   └── mmlu_5shot_results.json
 │
+├── modular/                    # Refactored, config-driven package (see modular/README.md)
+│   ├── run_finetune.py                 # CLI entry point for a fine-tuning stage
+│   ├── requirements.txt
+│   └── mpselecttune/                   # config / data / model / trainer / pipeline
+│
 └── data/README.md              # How to obtain the large .npy prompt tensors
 ```
+
+The original research scripts (under `bios/`, `adult_census/`, `mmlu_test/`) are
+kept as-is for reference. A cleaned-up, reusable implementation of the
+Bias-in-Bios pipeline lives under [modular/](modular/README.md).
 
 ## Setup
 
@@ -116,15 +128,31 @@ The spuriousness-score metric (task–concept correlation) is computed in
 > These are research scripts adapted from a compute-server workspace; some
 > contain machine-specific paths that may need adjusting for your environment.
 
+## Limitations and future work
+
+- **Two-stage compute overhead.** Running both the multi-prompt tuning and
+  selection tuning stages roughly *doubles* the fine-tuning time relative to
+  single-stage baselines (see runtime comparison in the paper). This is the
+  main efficiency trade-off for the improved worst-case unlearning.
+- **Prompt-type selection.** The method depends on identifying the worst prompt
+  type via evaluation on training data. If suitable worst-case prompt types are
+  not present in the candidate set, unlearning effectiveness can degrade.
+  Automated or online prompt-type selection is a promising direction.
+- **Concept scope.** Experiments focus on largely binary concepts (e.g. gender,
+  race, bio-weapon knowledge). Extending to multi-class or more abstract
+  concepts remains open.
+
 ## Citation
 
 ```bibtex
-@article{nag2025mpselecttune,
-  title   = {MPSelectTune: Prompt-type Selection for Fine-tuning improves
-             Concept Unlearning in LLMs},
-  author  = {Nag, Shubhadip and Das, Srinjoy and Saha, Agniva and
-             Ghosh, Anushree and Das, Soumi and Kumar, Tarun and
-             Bhattacharya, Suparna and Bhattacharya, Sourangshu},
-  year    = {2025}
+@inproceedings{nag2025mpselecttune,
+  title     = {MPSelectTune: Prompt-type Selection for Fine-tuning improves
+               Concept Unlearning in LLMs},
+  author    = {Nag, Shubhadip and Das, Srinjoy and Saha, Agniva and
+               Ghosh, Anushree and Das, Soumi and Kumar, Tarun and
+               Bhattacharya, Suparna and Bhattacharya, Sourangshu},
+  booktitle = {NeurIPS 2025 Workshop on Reliable ML from Unreliable Data},
+  year      = {2025},
+  url       = {https://openreview.net/forum?id=Jk8sOL97Tg}
 }
 ```
