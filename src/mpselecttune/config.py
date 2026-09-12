@@ -11,7 +11,7 @@ from dataclasses import dataclass, field
 from typing import List
 
 # ---------------------------------------------------------------------------
-# Label space (Bias-in-Bios)
+# Label space (Bias-in-Bios) — kept for backward compatibility
 # ---------------------------------------------------------------------------
 # Main task = profession prediction; concept (to be unlearned) = gender.
 PROFESSIONS: List[str] = [
@@ -28,34 +28,111 @@ OUTPUT_MARKER = "### Model Output:"
 
 
 @dataclass
+class TaskConfig:
+    """A concept-unlearning benchmark: a main task plus a concept to unlearn.
+
+    MPSelectTune is benchmark-agnostic — the same two-stage pipeline applies to
+    any (task, concept) pair. This object captures what changes between
+    benchmarks so the rest of the package stays generic.
+
+    Attributes
+    ----------
+    name:
+        Short benchmark identifier (e.g. ``"bios"``, ``"adult"``).
+    task_name:
+        Human-readable name of the main task (used in the prompt question).
+    label_space:
+        Candidate labels for the main task, shown in the prompt header.
+    concept_name:
+        Name of the protected concept to unlearn (e.g. ``"gender"``).
+    concept_classes:
+        The possible concept values (e.g. ``["Male", "Female"]``).
+    header:
+        Optional prompt header. If ``None`` a default header listing
+        ``label_space`` is generated.
+    """
+
+    name: str = "bios"
+    task_name: str = "profession"
+    label_space: List[str] = field(default_factory=lambda: list(PROFESSIONS))
+    concept_name: str = "gender"
+    concept_classes: List[str] = field(default_factory=lambda: ["Male", "Female"])
+    header: str | None = None
+
+    @property
+    def base_template(self) -> str:
+        if self.header is not None:
+            return self.header
+        labels = " ".join(f"{p}," for p in self.label_space)
+        return (
+            f"The list of possible {self.task_name}s are:\n"
+            f"[ {labels}]\n\n"
+            "Examples:\n"
+        )
+
+
+# ---------------------------------------------------------------------------
+# Built-in benchmark presets
+# ---------------------------------------------------------------------------
+BIOS_TASK = TaskConfig(
+    name="bios", task_name="profession", label_space=list(PROFESSIONS),
+    concept_name="gender", concept_classes=["Male", "Female"],
+)
+ADULT_TASK = TaskConfig(
+    name="adult", task_name="income", label_space=["<=50K", ">50K"],
+    concept_name="race", concept_classes=["White", "Black", "Asian-Pac-Islander",
+                                          "Amer-Indian-Eskimo", "Other"],
+)
+RT_GENDER_TASK = TaskConfig(
+    name="rt_gender", task_name="response class", label_space=["0", "1"],
+    concept_name="gender", concept_classes=["Male", "Female"],
+)
+JIGSAW_TASK = TaskConfig(
+    name="jigsaw", task_name="toxicity", label_space=["non-toxic", "toxic"],
+    concept_name="identity", concept_classes=["mentioned", "not-mentioned"],
+)
+
+TASK_PRESETS = {
+    "bios": BIOS_TASK,
+    "adult": ADULT_TASK,
+    "rt_gender": RT_GENDER_TASK,
+    "jigsaw": JIGSAW_TASK,
+}
+
+
+@dataclass
 class PromptConfig:
     """Prompt-construction settings.
 
     Attributes
     ----------
-    professions:
-        The candidate profession list shown in the prompt header.
+    task:
+        The benchmark's (task, concept) definition. Defaults to Bias-in-Bios.
     output_marker:
         Marker placed before the model's answer (used by the completion-only
         collator to mask the prompt during loss computation).
-    flip_train_gender:
-        If ``True``, the gender shown in the *query* in-context answer is
+    flip_train_concept:
+        If ``True``, the concept value shown in the *query* in-context answer is
         flipped for training examples. This is the adversarial signal that
         drives concept unlearning while preserving the task label.
     """
 
-    professions: List[str] = field(default_factory=lambda: list(PROFESSIONS))
+    task: TaskConfig = field(default_factory=lambda: BIOS_TASK)
     output_marker: str = OUTPUT_MARKER
-    flip_train_gender: bool = True
+    flip_train_concept: bool = True
+
+    # Backwards-compatible alias for the old attribute name.
+    @property
+    def flip_train_gender(self) -> bool:
+        return self.flip_train_concept
+
+    @property
+    def professions(self) -> List[str]:
+        return self.task.label_space
 
     @property
     def base_template(self) -> str:
-        professions = " ".join(f"{p}," for p in self.professions)
-        return (
-            "The list of possible professions are:\n"
-            f"[ {professions}]\n\n"
-            "Examples:\n"
-        )
+        return self.task.base_template
 
 
 @dataclass

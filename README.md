@@ -92,7 +92,7 @@ accuracy measured by the **spuriousness-score** metric.
 │   ├── mmlu_results.json
 │   └── mmlu_5shot_results.json
 │
-├── modular/                    # Refactored, config-driven package (see modular/README.md)
+├── src/                        # Refactored, config-driven package (see src/README.md)
 │   ├── run_finetune.py                 # CLI entry point for a fine-tuning stage
 │   ├── requirements.txt
 │   └── mpselecttune/                   # config / data / model / trainer / pipeline
@@ -102,8 +102,8 @@ accuracy measured by the **spuriousness-score** metric.
 
 The original research scripts (under `bios/`, `adult_census/`, `fine_tune_filtered/`,
 `jigsaw/`, `RT_gender/`, `mmlu_test/`) are kept as-is for reference. A cleaned-up,
-reusable implementation of the Bias-in-Bios pipeline lives under
-[modular/](modular/README.md).
+reusable, benchmark-agnostic implementation of the MPSelectTune pipeline lives
+under [src/](src/README.md).
 
 > **Note on data.** Large raw corpora for some benchmarks are **not** committed:
 > the Jigsaw `all_data.csv` (~874 MB) and the RT-Gender post/response CSVs
