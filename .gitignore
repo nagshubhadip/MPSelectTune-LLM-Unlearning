@@ -1,0 +1,28 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+env/
+
+# Large tokenized prompt tensors (not committed — see data/README.md)
+*.npy
+
+# Model checkpoints / weights
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Secrets
+.env
+*.key
