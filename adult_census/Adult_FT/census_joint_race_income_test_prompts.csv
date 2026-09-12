@@ -1,0 +1,2161 @@
+input_text,target_text,combination
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 57, Female gender, education level of Masters, working as Prof-specialty in Local-gov sector, Married-civ-spouse marital status, relationship status of Wife, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, Black
+
+Description: Person with age 37, Male gender, education level of Masters, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 38, Male gender, education level of Masters, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 60.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 37, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 60.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 37, Male gender, education level of Masters, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 60.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 37, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",5-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 41, Male gender, education level of Prof-school, working as Prof-specialty in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 83, Male gender, education level of Bachelors, working as Exec-managerial in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 55.0 hours per week with capital gain of 0.0 and capital loss of 2392.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 26, Male gender, education level of Prof-school, working as Prof-specialty in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 53, Male gender, education level of HS-grad, working as Adm-clerical in Federal-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, Black
+
+Description: Person with age 35, Male gender, education level of Prof-school, working as Prof-specialty in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 80.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 28, Male gender, education level of Prof-school, working as Prof-specialty in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2339.0, native to Canada.
+### Model Output:","No, White",5-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 56, Male gender, education level of 7th-8th, working as Handlers-cleaners in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2002.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 51, Female gender, education level of Prof-school, working as Prof-specialty in Private sector, Never-married marital status, relationship status of Not-in-family, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2559.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 35, Male gender, education level of 11th, working as Craft-repair in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2057.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 42, Female gender, education level of HS-grad, working as Adm-clerical in Private sector, Never-married marital status, relationship status of Other-relative, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2339.0, native to Trinadad&Tobago.
+### Model Output: No, Black
+
+Description: Person with age 33, Male gender, education level of Bachelors, working as Handlers-cleaners in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 35, Male gender, education level of Some-college, working as Handlers-cleaners in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2042.0, native to United-States.
+### Model Output:","No, White",5-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 51, Male gender, education level of Some-college, working as Transport-moving in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2603.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 57, Female gender, education level of Masters, working as Prof-specialty in Local-gov sector, Married-civ-spouse marital status, relationship status of Wife, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, Black
+
+Description: Person with age 57, Male gender, education level of Masters, working as Exec-managerial in Private sector, Divorced marital status, relationship status of Not-in-family, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2824.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 37, Female gender, education level of Doctorate, working as Prof-specialty in Self-emp-not-inc sector, Never-married marital status, relationship status of Not-in-family, working 60.0 hours per week with capital gain of 0.0 and capital loss of 2559.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 34, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 45, Male gender, education level of Masters, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 43.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",5-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 56, Female gender, education level of Some-college, working as Exec-managerial in Private sector, Divorced marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1980.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 42, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 60.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 53, Male gender, education level of HS-grad, working as Adm-clerical in Federal-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 42, Female gender, education level of Some-college, working as Exec-managerial in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2444.0, native to United-States.
+### Model Output:","Yes, White",3-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 41, Male gender, education level of Some-college, working as Exec-managerial in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 55.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 59, Male gender, education level of Bachelors, working as Exec-managerial in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 55, Male gender, education level of Some-college, working as Farming-fishing in Private sector, Widowed marital status, relationship status of Not-in-family, working 62.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 66, Female gender, education level of Bachelors, working as Prof-specialty in Local-gov sector, Widowed marital status, relationship status of Not-in-family, working 25.0 hours per week with capital gain of 0.0 and capital loss of 2206.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 53, Male gender, education level of Masters, working as Exec-managerial in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 41, Female gender, education level of Prof-school, working as Exec-managerial in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Wife, working 55.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output:","Yes, White",5-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 33, Male gender, education level of 12th, working as Craft-repair in Private sector, Divorced marital status, relationship status of Not-in-family, working 42.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 27, Female gender, education level of Some-college, working as Adm-clerical in Private sector, Married-civ-spouse marital status, relationship status of Wife, working 20.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 52, Male gender, education level of Prof-school, working as Exec-managerial in Private sector, Divorced marital status, relationship status of Not-in-family, working 60.0 hours per week with capital gain of 0.0 and capital loss of 2559.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 19, Female gender, education level of Some-college, working as Adm-clerical in Private sector, Never-married marital status, relationship status of Own-child, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 42, Male gender, education level of Bachelors, working as Prof-specialty in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",4-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 27, Male gender, education level of HS-grad, working as Craft-repair in Federal-gov sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1980.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 26, Male gender, education level of Assoc-voc, working as Adm-clerical in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 37, Male gender, education level of Assoc-voc, working as Craft-repair in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 26, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Never-married marital status, relationship status of Not-in-family, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output:","Yes, White",3-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 34, Male gender, education level of HS-grad, working as Machine-op-inspct in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 35, Male gender, education level of 11th, working as Craft-repair in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2057.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 35, Male gender, education level of Some-college, working as Craft-repair in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2051.0, native to United-States.
+### Model Output:","No, White",2-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 42, Male gender, education level of HS-grad, working as Craft-repair in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 48.0 hours per week with capital gain of 0.0 and capital loss of 2042.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 42, Male gender, education level of 7th-8th, working as Handlers-cleaners in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2205.0, native to United-States.
+### Model Output: No, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 42, Male gender, education level of HS-grad, working as Craft-repair in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2002.0, native to United-States.
+### Model Output:","No, White",2-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 65, Female gender, education level of HS-grad, working as Adm-clerical in Private sector, Divorced marital status, relationship status of Unmarried, working 59.0 hours per week with capital gain of 0.0 and capital loss of 2206.0, native to Canada.
+### Model Output: No, White
+
+Description: Person with age 54, Male gender, education level of HS-grad, working as Craft-repair in Self-emp-not-inc sector, Widowed marital status, relationship status of Not-in-family, working 35.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 42, Female gender, education level of HS-grad, working as Adm-clerical in Private sector, Never-married marital status, relationship status of Other-relative, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2339.0, native to Trinadad&Tobago.
+### Model Output: No, Black
+
+Description: Person with age 25, Male gender, education level of HS-grad, working as Craft-repair in Private sector, Never-married marital status, relationship status of Not-in-family, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 28, Female gender, education level of Assoc-acdm, working as Adm-clerical in Local-gov sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1980.0, native to United-States.
+### Model Output:","No, White",4-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 43, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 55, Female gender, education level of HS-grad, working as Exec-managerial in Private sector, Separated marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 47, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 46, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 80.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output:","Yes, White",3-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 34, Male gender, education level of Some-college, working as Transport-moving in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2179.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 36, Male gender, education level of HS-grad, working as Exec-managerial in Private sector, Never-married marital status, relationship status of Not-in-family, working 70.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 47, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output:","Yes, White",2-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 51, Male gender, education level of Masters, working as Prof-specialty in Local-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 35.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 65, Male gender, education level of Some-college, working as Exec-managerial in Federal-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2174.0, native to United-States.
+### Model Output: Yes, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 51, Male gender, education level of Masters, working as Prof-specialty in State-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 60.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",2-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 46, Male gender, education level of Some-college, working as Sales in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2042.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 52, Male gender, education level of HS-grad, working as Sales in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 46, Male gender, education level of Masters, working as Sales in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 65.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 46, Male gender, education level of Bachelors, working as Sales in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",3-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 36, Male gender, education level of HS-grad, working as Exec-managerial in Private sector, Never-married marital status, relationship status of Not-in-family, working 70.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 34, Male gender, education level of HS-grad, working as Machine-op-inspct in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 48, Female gender, education level of HS-grad, working as Exec-managerial in Private sector, Divorced marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 63, Female gender, education level of HS-grad, working as Exec-managerial in Private sector, Divorced marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2205.0, native to United-States.
+### Model Output:","No, White",3-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 61, Male gender, education level of 5th-6th, working as Handlers-cleaners in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2339.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 38, Male gender, education level of 10th, working as Adm-clerical in Private sector, Separated marital status, relationship status of Unmarried, working 40.0 hours per week with capital gain of 0.0 and capital loss of 3770.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 46, Male gender, education level of Assoc-acdm, working as Adm-clerical in State-gov sector, Divorced marital status, relationship status of Unmarried, working 38.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output:","Yes, White",2-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 55, Male gender, education level of Masters, working as Prof-specialty in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 56, Male gender, education level of Bachelors, working as Transport-moving in Federal-gov sector, Never-married marital status, relationship status of Not-in-family, working 65.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output: No, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 31, Male gender, education level of Masters, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 48.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",2-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 55, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 35.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to Greece.
+### Model Output: Yes, White
+
+Description: Person with age 59, Female gender, education level of HS-grad, working as Protective-serv in Local-gov sector, Separated marital status, relationship status of Other-relative, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2339.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 42, Male gender, education level of Masters, working as Adm-clerical in Federal-gov sector, Divorced marital status, relationship status of Not-in-family, working 60.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 60, Male gender, education level of HS-grad, working as Tech-support in Federal-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 44, Male gender, education level of Bachelors, working as Tech-support in Federal-gov sector, Divorced marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output:","Yes, White",4-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 61, Male gender, education level of HS-grad, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 32.0 hours per week with capital gain of 0.0 and capital loss of 2603.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 59, Male gender, education level of Bachelors, working as Exec-managerial in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 59, Male gender, education level of Some-college, working as Exec-managerial in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 48.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 22, Male gender, education level of Assoc-acdm, working as Handlers-cleaners in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2824.0, native to United-States.
+### Model Output: Yes, Black
+
+Description: Person with age 55, Male gender, education level of Bachelors, working as Exec-managerial in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 56, Female gender, education level of Some-college, working as Exec-managerial in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Wife, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",5-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 60, Male gender, education level of Bachelors, working as Exec-managerial in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 38, Male gender, education level of Bachelors, working as Tech-support in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 57, Female gender, education level of Masters, working as Prof-specialty in Local-gov sector, Married-civ-spouse marital status, relationship status of Wife, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 55, Male gender, education level of Masters, working as Tech-support in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 20.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",3-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 32, Male gender, education level of Masters, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, Black
+
+Description: Person with age 45, Male gender, education level of Assoc-voc, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 74, Female gender, education level of Doctorate, working as Prof-specialty in State-gov sector, Never-married marital status, relationship status of Other-relative, working 20.0 hours per week with capital gain of 0.0 and capital loss of 3683.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 68, Male gender, education level of Masters, working as Prof-specialty in State-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 42.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 57, Male gender, education level of Masters, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, Black",4-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 27, Male gender, education level of HS-grad, working as Craft-repair in Federal-gov sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1980.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 42, Male gender, education level of 7th-8th, working as Handlers-cleaners in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2205.0, native to United-States.
+### Model Output: No, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 27, Male gender, education level of Some-college, working as Protective-serv in Local-gov sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2231.0, native to United-States.
+### Model Output:","Yes, White",2-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 26, Male gender, education level of Prof-school, working as Prof-specialty in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 27, Male gender, education level of 10th, working as Sales in Private sector, Never-married marital status, relationship status of Other-relative, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1980.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 32, Male gender, education level of Bachelors, working as Prof-specialty in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 48.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 66, Female gender, education level of Some-college, working as Exec-managerial in Private sector, Widowed marital status, relationship status of Unmarried, working 40.0 hours per week with capital gain of 0.0 and capital loss of 4356.0, native to United-States.
+### Model Output: No, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 90, Male gender, education level of HS-grad, working as Other-service in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2206.0, native to United-States.
+### Model Output:","No, Black",4-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 65, Male gender, education level of HS-grad, working as Farming-fishing in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 65.0 hours per week with capital gain of 0.0 and capital loss of 2352.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 52, Male gender, education level of HS-grad, working as Sales in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 46, Male gender, education level of Masters, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 43, Female gender, education level of Masters, working as Exec-managerial in Private sector, Divorced marital status, relationship status of Unmarried, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2547.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 30, Female gender, education level of HS-grad, working as Sales in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1980.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 37, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2824.0, native to United-States.
+### Model Output:","Yes, White",5-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 66, Female gender, education level of Some-college, working as Exec-managerial in Private sector, Widowed marital status, relationship status of Unmarried, working 40.0 hours per week with capital gain of 0.0 and capital loss of 4356.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 51, Male gender, education level of Some-college, working as Transport-moving in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2603.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 51, Male gender, education level of 10th, working as Sales in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",2-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 66, Female gender, education level of Bachelors, working as Prof-specialty in Local-gov sector, Widowed marital status, relationship status of Not-in-family, working 25.0 hours per week with capital gain of 0.0 and capital loss of 2206.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 39, Male gender, education level of 10th, working as Craft-repair in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2051.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 29, Male gender, education level of 7th-8th, working as Farming-fishing in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2042.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 39, Male gender, education level of Some-college, working as Farming-fishing in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 99.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output:","Yes, White",3-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 38, Male gender, education level of HS-grad, working as Craft-repair in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 44.0 hours per week with capital gain of 0.0 and capital loss of 2051.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 32, Male gender, education level of Masters, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 38, Male gender, education level of HS-grad, working as Craft-repair in Private sector, Divorced marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2205.0, native to United-States.
+### Model Output:","No, White",2-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 66, Female gender, education level of Bachelors, working as Prof-specialty in Local-gov sector, Widowed marital status, relationship status of Not-in-family, working 25.0 hours per week with capital gain of 0.0 and capital loss of 2206.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 37, Male gender, education level of 10th, working as Transport-moving in Self-emp-inc sector, Never-married marital status, relationship status of Not-in-family, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2559.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 38, Male gender, education level of Prof-school, working as Prof-specialty in Federal-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 70, Male gender, education level of Bachelors, working as Exec-managerial in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output:","Yes, White",3-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 38, Male gender, education level of Bachelors, working as Tech-support in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 59, Female gender, education level of HS-grad, working as Protective-serv in Local-gov sector, Separated marital status, relationship status of Other-relative, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2339.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 20, Male gender, education level of Some-college, working as Farming-fishing in Self-emp-not-inc sector, Never-married marital status, relationship status of Own-child, working 10.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 37, Male gender, education level of Bachelors, working as Tech-support in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 57, Male gender, education level of Doctorate, working as Tech-support in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to Germany.
+### Model Output:","Yes, White",4-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 64, Male gender, education level of 11th, working as Craft-repair in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2179.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 27, Female gender, education level of Some-college, working as Adm-clerical in Private sector, Married-civ-spouse marital status, relationship status of Wife, working 20.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 35, Male gender, education level of 11th, working as Craft-repair in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2057.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 32, Male gender, education level of 11th, working as Craft-repair in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 30.0 hours per week with capital gain of 0.0 and capital loss of 2042.0, native to United-States.
+### Model Output:","No, White",3-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 38, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-not-inc sector, Never-married marital status, relationship status of Not-in-family, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2824.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 45, Male gender, education level of Bachelors, working as Exec-managerial in Local-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 45, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 60.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 66, Female gender, education level of Some-college, working as Exec-managerial in Private sector, Widowed marital status, relationship status of Unmarried, working 40.0 hours per week with capital gain of 0.0 and capital loss of 4356.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 45, Male gender, education level of Assoc-voc, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 45, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 55.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",5-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 68, Female gender, education level of HS-grad, working as Prof-specialty in Federal-gov sector, Divorced marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 3683.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 47, Male gender, education level of Some-college, working as Craft-repair in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 27, Female gender, education level of Some-college, working as Adm-clerical in Private sector, Married-civ-spouse marital status, relationship status of Wife, working 20.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 49, Male gender, education level of Masters, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 23, Male gender, education level of HS-grad, working as Adm-clerical in Private sector, Never-married marital status, relationship status of Own-child, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output:","No, Black",4-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 50, Male gender, education level of HS-grad, working as Craft-repair in Local-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 35.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 42, Female gender, education level of HS-grad, working as Adm-clerical in Private sector, Never-married marital status, relationship status of Other-relative, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2339.0, native to Trinadad&Tobago.
+### Model Output: No, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 45, Male gender, education level of HS-grad, working as Craft-repair in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2051.0, native to United-States.
+### Model Output:","No, White",2-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 61, Female gender, education level of HS-grad, working as Sales in Private sector, Divorced marital status, relationship status of Unmarried, working 25.0 hours per week with capital gain of 0.0 and capital loss of 2754.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 47, Male gender, education level of Masters, working as Exec-managerial in Local-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, Black
+
+Description: Person with age 39, Male gender, education level of HS-grad, working as Craft-repair in Private sector, Never-married marital status, relationship status of Own-child, working 42.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 54, Female gender, education level of Bachelors, working as Exec-managerial in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Wife, working 35.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",3-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 26, Male gender, education level of Assoc-voc, working as Craft-repair in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2002.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 32, Male gender, education level of Masters, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, Black
+
+Description: Person with age 38, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-not-inc sector, Never-married marital status, relationship status of Not-in-family, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2824.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 35, Male gender, education level of 11th, working as Craft-repair in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2057.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 30, Male gender, education level of Some-college, working as Craft-repair in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2051.0, native to United-States.
+### Model Output:","No, White",4-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 31, Male gender, education level of Assoc-voc, working as Transport-moving in Private sector, Never-married marital status, relationship status of Own-child, working 60.0 hours per week with capital gain of 0.0 and capital loss of 1980.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 33, Male gender, education level of HS-grad, working as Sales in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 59, Female gender, education level of HS-grad, working as Protective-serv in Local-gov sector, Separated marital status, relationship status of Other-relative, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2339.0, native to United-States.
+### Model Output: No, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 60, Male gender, education level of HS-grad, working as Protective-serv in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 34.0 hours per week with capital gain of 0.0 and capital loss of 2042.0, native to United-States.
+### Model Output:","No, White",3-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 55, Female gender, education level of Some-college, working as Adm-clerical in Private sector, Never-married marital status, relationship status of Not-in-family, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2339.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 37, Female gender, education level of Doctorate, working as Prof-specialty in Self-emp-not-inc sector, Never-married marital status, relationship status of Not-in-family, working 60.0 hours per week with capital gain of 0.0 and capital loss of 2559.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 27, Male gender, education level of HS-grad, working as Other-service in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1980.0, native to United-States.
+### Model Output:","No, White",2-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 27, Male gender, education level of HS-grad, working as Craft-repair in Federal-gov sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1980.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 55, Male gender, education level of Assoc-voc, working as Prof-specialty in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to Germany.
+### Model Output: Yes, White
+
+Description: Person with age 52, Male gender, education level of Prof-school, working as Exec-managerial in Private sector, Divorced marital status, relationship status of Not-in-family, working 60.0 hours per week with capital gain of 0.0 and capital loss of 2559.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 39, Female gender, education level of Masters, working as Prof-specialty in Private sector, Married-civ-spouse marital status, relationship status of Wife, working 24.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",3-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 42, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 60.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 47, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 44, Male gender, education level of Bachelors, working as Prof-specialty in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 47, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 60.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",3-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 27, Female gender, education level of Some-college, working as Adm-clerical in Private sector, Married-civ-spouse marital status, relationship status of Wife, working 20.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 39, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 39, Male gender, education level of Some-college, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 62.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",2-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 55, Male gender, education level of Doctorate, working as Prof-specialty in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 55.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 26, Male gender, education level of Prof-school, working as Prof-specialty in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 66, Female gender, education level of Some-college, working as Exec-managerial in Private sector, Widowed marital status, relationship status of Unmarried, working 40.0 hours per week with capital gain of 0.0 and capital loss of 4356.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 31, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 55.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 38, Male gender, education level of Prof-school, working as Prof-specialty in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 90.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 67, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Widowed marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2392.0, native to United-States.
+### Model Output:","Yes, White",5-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 44, Male gender, education level of HS-grad, working as Exec-managerial in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 50, Male gender, education level of 11th, working as Exec-managerial in Self-emp-inc sector, Never-married marital status, relationship status of Other-relative, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2444.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 66, Female gender, education level of Some-college, working as Exec-managerial in Private sector, Widowed marital status, relationship status of Unmarried, working 40.0 hours per week with capital gain of 0.0 and capital loss of 4356.0, native to United-States.
+### Model Output: No, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 60, Male gender, education level of HS-grad, working as Exec-managerial in Self-emp-not-inc sector, Never-married marital status, relationship status of Not-in-family, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2559.0, native to United-States.
+### Model Output:","Yes, Black",3-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 41, Male gender, education level of Prof-school, working as Prof-specialty in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 66, Female gender, education level of Some-college, working as Exec-managerial in Private sector, Widowed marital status, relationship status of Unmarried, working 40.0 hours per week with capital gain of 0.0 and capital loss of 4356.0, native to United-States.
+### Model Output: No, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 39, Male gender, education level of Masters, working as Sales in Private sector, Never-married marital status, relationship status of Not-in-family, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2444.0, native to United-States.
+### Model Output:","Yes, White",2-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 57, Female gender, education level of Masters, working as Prof-specialty in Local-gov sector, Married-civ-spouse marital status, relationship status of Wife, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, Black
+
+Description: Person with age 47, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 42, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 60.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 58, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 55, Male gender, education level of Some-college, working as Farming-fishing in Private sector, Widowed marital status, relationship status of Not-in-family, working 62.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 42, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",5-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 20, Male gender, education level of Some-college, working as Farming-fishing in Self-emp-not-inc sector, Never-married marital status, relationship status of Own-child, working 10.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 41, Male gender, education level of Masters, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 65.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 32, Male gender, education level of Masters, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 31, Male gender, education level of Masters, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 70.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to Taiwan.
+### Model Output:","Yes, White",3-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 25, Male gender, education level of Bachelors, working as Prof-specialty in Local-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 39, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 36, Male gender, education level of Bachelors, working as Sales in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 35.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 29, Female gender, education level of HS-grad, working as Sales in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Wife, working 25.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 66, Female gender, education level of Bachelors, working as Prof-specialty in Local-gov sector, Widowed marital status, relationship status of Not-in-family, working 25.0 hours per week with capital gain of 0.0 and capital loss of 2206.0, native to United-States.
+### Model Output: No, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 23, Male gender, education level of Bachelors, working as Adm-clerical in Self-emp-not-inc sector, Never-married marital status, relationship status of Own-child, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2231.0, native to United-States.
+### Model Output:","Yes, White",5-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 54, Female gender, education level of Masters, working as Prof-specialty in Private sector, Divorced marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2559.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 27, Male gender, education level of HS-grad, working as Craft-repair in Federal-gov sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1980.0, native to United-States.
+### Model Output: No, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 43, Female gender, education level of Masters, working as Prof-specialty in Private sector, Divorced marital status, relationship status of Unmarried, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2547.0, native to United-States.
+### Model Output:","Yes, White",2-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 50, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 30.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 61, Male gender, education level of 5th-6th, working as Handlers-cleaners in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2339.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 41, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 60.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 40, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-not-inc sector, Never-married marital status, relationship status of Not-in-family, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2444.0, native to United-States.
+### Model Output:","Yes, White",3-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 34, Male gender, education level of Some-college, working as Transport-moving in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2179.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 44, Male gender, education level of Some-college, working as Sales in Self-emp-inc sector, Never-married marital status, relationship status of Not-in-family, working 60.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 41, Male gender, education level of Some-college, working as Craft-repair in Self-emp-not-inc sector, Divorced marital status, relationship status of Not-in-family, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output:","No, White",2-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 25, Female gender, education level of Bachelors, working as Prof-specialty in Private sector, Never-married marital status, relationship status of Own-child, working 35.0 hours per week with capital gain of 0.0 and capital loss of 2339.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 55, Female gender, education level of Some-college, working as Adm-clerical in Private sector, Never-married marital status, relationship status of Not-in-family, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2339.0, native to United-States.
+### Model Output: No, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 38, Male gender, education level of HS-grad, working as Handlers-cleaners in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2042.0, native to United-States.
+### Model Output:","No, White",2-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 56, Male gender, education level of Bachelors, working as Transport-moving in Federal-gov sector, Never-married marital status, relationship status of Not-in-family, working 65.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 47, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Divorced marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 56, Female gender, education level of Some-college, working as Exec-managerial in Private sector, Divorced marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1980.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 44, Male gender, education level of Some-college, working as Exec-managerial in Private sector, Separated marital status, relationship status of Not-in-family, working 45.0 hours per week with capital gain of 0.0 and capital loss of 1980.0, native to England.
+### Model Output:","No, White",3-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 30, Male gender, education level of HS-grad, working as Adm-clerical in Private sector, Never-married marital status, relationship status of Unmarried, working 42.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 66, Female gender, education level of Some-college, working as Exec-managerial in Private sector, Widowed marital status, relationship status of Unmarried, working 40.0 hours per week with capital gain of 0.0 and capital loss of 4356.0, native to United-States.
+### Model Output: No, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 19, Male gender, education level of HS-grad, working as Adm-clerical in Private sector, Never-married marital status, relationship status of Own-child, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output:","No, White",2-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 33, Male gender, education level of HS-grad, working as Craft-repair in Private sector, Divorced marital status, relationship status of Not-in-family, working 84.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 25, Male gender, education level of HS-grad, working as Craft-repair in Private sector, Never-married marital status, relationship status of Not-in-family, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 39, Male gender, education level of HS-grad, working as Craft-repair in Private sector, Never-married marital status, relationship status of Own-child, working 42.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 67, Male gender, education level of Bachelors, working as Exec-managerial in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 75.0 hours per week with capital gain of 0.0 and capital loss of 2392.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 53, Male gender, education level of HS-grad, working as Adm-clerical in Federal-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 41, Male gender, education level of HS-grad, working as Craft-repair in Private sector, Divorced marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2339.0, native to United-States.
+### Model Output:","No, White",5-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 52, Male gender, education level of HS-grad, working as Sales in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 52, Male gender, education level of HS-grad, working as Craft-repair in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 47, Male gender, education level of HS-grad, working as Craft-repair in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",2-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 71, Male gender, education level of Bachelors, working as Exec-managerial in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 60.0 hours per week with capital gain of 0.0 and capital loss of 2392.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 66, Female gender, education level of Bachelors, working as Prof-specialty in Local-gov sector, Widowed marital status, relationship status of Not-in-family, working 25.0 hours per week with capital gain of 0.0 and capital loss of 2206.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 36, Male gender, education level of HS-grad, working as Transport-moving in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2002.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 34, Male gender, education level of HS-grad, working as Transport-moving in Private sector, Never-married marital status, relationship status of Own-child, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1980.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 34, Male gender, education level of HS-grad, working as Transport-moving in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 55.0 hours per week with capital gain of 0.0 and capital loss of 2051.0, native to United-States.
+### Model Output:","No, White",4-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 27, Female gender, education level of Some-college, working as Adm-clerical in Private sector, Married-civ-spouse marital status, relationship status of Wife, working 20.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 34, Female gender, education level of Some-college, working as Adm-clerical in Private sector, Married-civ-spouse marital status, relationship status of Wife, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2057.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 46, Female gender, education level of 5th-6th, working as Craft-repair in Private sector, Divorced marital status, relationship status of Not-in-family, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2339.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 31, Male gender, education level of Some-college, working as Adm-clerical in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2051.0, native to United-States.
+### Model Output:","No, White",3-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 52, Male gender, education level of HS-grad, working as Sales in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 39, Male gender, education level of HS-grad, working as Machine-op-inspct in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2051.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 44, Male gender, education level of Bachelors, working as Machine-op-inspct in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 63, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2179.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 40, Male gender, education level of Bachelors, working as Sales in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 60.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 40, Male gender, education level of Some-college, working as Machine-op-inspct in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2179.0, native to United-States.
+### Model Output:","No, White",5-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 38, Male gender, education level of 10th, working as Adm-clerical in Private sector, Separated marital status, relationship status of Unmarried, working 40.0 hours per week with capital gain of 0.0 and capital loss of 3770.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 39, Female gender, education level of Some-college, working as Other-service in Private sector, Never-married marital status, relationship status of Own-child, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2205.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 58, Female gender, education level of Masters, working as Adm-clerical in Private sector, Divorced marital status, relationship status of Not-in-family, working 45.0 hours per week with capital gain of 0.0 and capital loss of 1980.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 46, Male gender, education level of Prof-school, working as Prof-specialty in Private sector, Divorced marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2824.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 28, Female gender, education level of 10th, working as Adm-clerical in Private sector, Widowed marital status, relationship status of Unmarried, working 35.0 hours per week with capital gain of 0.0 and capital loss of 2238.0, native to United-States.
+### Model Output:","No, White",4-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 51, Male gender, education level of Masters, working as Protective-serv in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 57, Male gender, education level of Masters, working as Exec-managerial in Private sector, Divorced marital status, relationship status of Not-in-family, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2824.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 43, Male gender, education level of Bachelors, working as Prof-specialty in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 45, Male gender, education level of HS-grad, working as Other-service in Private sector, Divorced marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1980.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 22, Male gender, education level of Assoc-acdm, working as Handlers-cleaners in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2824.0, native to United-States.
+### Model Output: Yes, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 54, Male gender, education level of Some-college, working as Sales in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output:","Yes, White",5-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 42, Male gender, education level of 7th-8th, working as Handlers-cleaners in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2205.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 55, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 35.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to Greece.
+### Model Output: Yes, White
+
+Description: Person with age 61, Male gender, education level of 5th-6th, working as Handlers-cleaners in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2339.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 38, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-not-inc sector, Never-married marital status, relationship status of Not-in-family, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2824.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 49, Male gender, education level of 9th, working as Handlers-cleaners in Local-gov sector, Widowed marital status, relationship status of Unmarried, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2231.0, native to United-States.
+### Model Output:","Yes, White",4-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 23, Male gender, education level of Some-college, working as Other-service in Private sector, Separated marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2559.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 36, Male gender, education level of Masters, working as Adm-clerical in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to Japan.
+### Model Output: Yes, White
+
+Description: Person with age 34, Male gender, education level of Some-college, working as Transport-moving in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2179.0, native to United-States.
+### Model Output: No, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 50, Male gender, education level of HS-grad, working as Adm-clerical in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1980.0, native to United-States.
+### Model Output:","No, White",3-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 20, Male gender, education level of Some-college, working as Farming-fishing in Self-emp-not-inc sector, Never-married marital status, relationship status of Own-child, working 10.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 32, Male gender, education level of Masters, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, Black
+
+Description: Person with age 31, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2246.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 51, Female gender, education level of Some-college, working as Prof-specialty in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Wife, working 60.0 hours per week with capital gain of 0.0 and capital loss of 2057.0, native to Canada.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 32, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Never-married marital status, relationship status of Other-relative, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2444.0, native to United-States.
+### Model Output:","Yes, White",4-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 42, Male gender, education level of 7th-8th, working as Handlers-cleaners in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2205.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 32, Female gender, education level of Some-college, working as Machine-op-inspct in Private sector, Never-married marital status, relationship status of Other-relative, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2205.0, native to Holand-Netherlands.
+### Model Output: No, White
+
+Description: Person with age 31, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2246.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 34, Male gender, education level of Assoc-acdm, working as Tech-support in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 10.0 hours per week with capital gain of 0.0 and capital loss of 2042.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 38, Male gender, education level of Some-college, working as Machine-op-inspct in Private sector, Separated marital status, relationship status of Not-in-family, working 55.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output:","Yes, White",4-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 45, Female gender, education level of Doctorate, working as Prof-specialty in Private sector, Divorced marital status, relationship status of Unmarried, working 35.0 hours per week with capital gain of 0.0 and capital loss of 3004.0, native to United-States.
+### Model Output: Yes, Black
+
+Description: Person with age 44, Female gender, education level of Some-college, working as Adm-clerical in Private sector, Married-civ-spouse marital status, relationship status of Wife, working 6.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 39, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 34, Male gender, education level of Bachelors, working as Other-service in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output:","No, White",3-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 60, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 80.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 46, Male gender, education level of Masters, working as Tech-support in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 32, Male gender, education level of Masters, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, Black
+
+Description: Person with age 20, Male gender, education level of HS-grad, working as Other-service in Private sector, Never-married marital status, relationship status of Unmarried, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 41, Male gender, education level of HS-grad, working as Craft-repair in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 60.0 hours per week with capital gain of 0.0 and capital loss of 2002.0, native to United-States.
+### Model Output:","No, White",4-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 50, Male gender, education level of HS-grad, working as Craft-repair in Local-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 35.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 22, Male gender, education level of Assoc-acdm, working as Handlers-cleaners in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2824.0, native to United-States.
+### Model Output: Yes, Black
+
+Description: Person with age 36, Female gender, education level of HS-grad, working as Craft-repair in Private sector, Married-civ-spouse marital status, relationship status of Own-child, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2002.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 47, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Divorced marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 41, Male gender, education level of HS-grad, working as Craft-repair in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 60.0 hours per week with capital gain of 0.0 and capital loss of 2051.0, native to United-States.
+### Model Output:","No, White",4-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 36, Male gender, education level of Bachelors, working as Sales in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 54, Female gender, education level of Masters, working as Prof-specialty in Private sector, Divorced marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2559.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 21, Male gender, education level of Assoc-voc, working as Craft-repair in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2603.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 69, Male gender, education level of 5th-6th, working as Machine-op-inspct in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2267.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 66, Female gender, education level of Bachelors, working as Prof-specialty in Local-gov sector, Widowed marital status, relationship status of Not-in-family, working 25.0 hours per week with capital gain of 0.0 and capital loss of 2206.0, native to United-States.
+### Model Output: No, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 42, Male gender, education level of Bachelors, working as Exec-managerial in Local-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 48.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",5-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 50, Male gender, education level of 7th-8th, working as Craft-repair in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 63.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 39, Male gender, education level of Assoc-voc, working as Craft-repair in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 66, Female gender, education level of Some-college, working as Exec-managerial in Private sector, Widowed marital status, relationship status of Unmarried, working 40.0 hours per week with capital gain of 0.0 and capital loss of 4356.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 60, Male gender, education level of Assoc-voc, working as Machine-op-inspct in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 70.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 55, Male gender, education level of Some-college, working as Farming-fishing in Private sector, Widowed marital status, relationship status of Not-in-family, working 62.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 40, Male gender, education level of Assoc-acdm, working as Craft-repair in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output:","No, White",5-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 52, Male gender, education level of HS-grad, working as Sales in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 51, Male gender, education level of HS-grad, working as Sales in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2002.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 40, Male gender, education level of Masters, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 59, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2002.0, native to United-States.
+### Model Output:","No, White",3-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 31, Male gender, education level of 11th, working as Craft-repair in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 68, Male gender, education level of Some-college, working as Sales in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 55.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 33, Male gender, education level of 12th, working as Craft-repair in Private sector, Divorced marital status, relationship status of Not-in-family, working 42.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 52, Male gender, education level of HS-grad, working as Sales in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output: No, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 33, Male gender, education level of Assoc-voc, working as Craft-repair in Private sector, Separated marital status, relationship status of Not-in-family, working 42.0 hours per week with capital gain of 0.0 and capital loss of 2444.0, native to United-States.
+### Model Output:","Yes, White",4-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 60, Male gender, education level of Prof-school, working as Prof-specialty in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 80.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 35, Female gender, education level of Bachelors, working as Sales in Private sector, Divorced marital status, relationship status of Not-in-family, working 65.0 hours per week with capital gain of 0.0 and capital loss of 1980.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 39, Female gender, education level of Some-college, working as Other-service in Private sector, Never-married marital status, relationship status of Own-child, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2205.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 83, Male gender, education level of Bachelors, working as Exec-managerial in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 55.0 hours per week with capital gain of 0.0 and capital loss of 2392.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 35, Female gender, education level of 10th, working as Other-service in Private sector, Widowed marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1980.0, native to United-States.
+### Model Output:","No, Black",4-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 51, Male gender, education level of Some-college, working as Craft-repair in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 60.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 44, Male gender, education level of Bachelors, working as Prof-specialty in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, Black
+
+Description: Person with age 51, Male gender, education level of Some-college, working as Transport-moving in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2603.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 50, Male gender, education level of 7th-8th, working as Craft-repair in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 63.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 45, Male gender, education level of Assoc-voc, working as Sales in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 51, Male gender, education level of Some-college, working as Sales in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",5-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 34, Male gender, education level of Prof-school, working as Prof-specialty in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 55.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 35, Male gender, education level of Masters, working as Prof-specialty in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 34, Male gender, education level of Some-college, working as Transport-moving in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2179.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 34, Male gender, education level of HS-grad, working as Exec-managerial in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2002.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 34, Male gender, education level of Masters, working as Prof-specialty in Private sector, Never-married marital status, relationship status of Not-in-family, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output:","No, White",4-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 65, Male gender, education level of Some-college, working as Exec-managerial in Federal-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2174.0, native to United-States.
+### Model Output: Yes, Black
+
+Description: Person with age 50, Female gender, education level of Bachelors, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Wife, working 20.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 40, Male gender, education level of Masters, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 40, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",3-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 55, Female gender, education level of HS-grad, working as Exec-managerial in Private sector, Separated marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 36, Male gender, education level of HS-grad, working as Transport-moving in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2002.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 24, Female gender, education level of HS-grad, working as Adm-clerical in Private sector, Never-married marital status, relationship status of Not-in-family, working 37.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 50, Male gender, education level of 11th, working as Exec-managerial in Self-emp-inc sector, Never-married marital status, relationship status of Other-relative, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2444.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 51, Male gender, education level of Assoc-voc, working as Tech-support in State-gov sector, Divorced marital status, relationship status of Not-in-family, working 39.0 hours per week with capital gain of 0.0 and capital loss of 2444.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 55, Male gender, education level of Bachelors, working as Exec-managerial in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output:","Yes, White",5-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 27, Female gender, education level of Some-college, working as Adm-clerical in Private sector, Married-civ-spouse marital status, relationship status of Wife, working 20.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 63, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2179.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 65, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 25, Male gender, education level of Bachelors, working as Prof-specialty in Local-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 67, Male gender, education level of Some-college, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2457.0, native to United-States.
+### Model Output:","No, White",4-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 34, Male gender, education level of Bachelors, working as Sales in Private sector, Separated marital status, relationship status of Not-in-family, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2824.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 27, Female gender, education level of Some-college, working as Adm-clerical in Private sector, Married-civ-spouse marital status, relationship status of Wife, working 20.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 54, Female gender, education level of 7th-8th, working as Machine-op-inspct in Private sector, Divorced marital status, relationship status of Unmarried, working 40.0 hours per week with capital gain of 0.0 and capital loss of 3900.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 27, Male gender, education level of 10th, working as Sales in Private sector, Never-married marital status, relationship status of Other-relative, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1980.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 29, Female gender, education level of 11th, working as Sales in Private sector, Separated marital status, relationship status of Not-in-family, working 42.0 hours per week with capital gain of 0.0 and capital loss of 2754.0, native to United-States.
+### Model Output:","No, White",4-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 57, Female gender, education level of Masters, working as Prof-specialty in Local-gov sector, Married-civ-spouse marital status, relationship status of Wife, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, Black
+
+Description: Person with age 67, Female gender, education level of Bachelors, working as Exec-managerial in Private sector, Divorced marital status, relationship status of Not-in-family, working 5.0 hours per week with capital gain of 0.0 and capital loss of 2206.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 37, Male gender, education level of Bachelors, working as Sales in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 47, Male gender, education level of Some-college, working as Craft-repair in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 54, Male gender, education level of Some-college, working as Sales in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 46, Male gender, education level of Bachelors, working as Sales in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output:","Yes, White",5-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 57, Male gender, education level of Masters, working as Exec-managerial in Private sector, Divorced marital status, relationship status of Not-in-family, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2824.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 72, Male gender, education level of Doctorate, working as Prof-specialty in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 25.0 hours per week with capital gain of 0.0 and capital loss of 2392.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 32, Male gender, education level of Masters, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 32, Male gender, education level of Masters, working as Exec-managerial in Private sector, Separated marital status, relationship status of Not-in-family, working 55.0 hours per week with capital gain of 0.0 and capital loss of 2824.0, native to United-States.
+### Model Output:","Yes, White",3-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 55, Female gender, education level of Masters, working as Prof-specialty in Local-gov sector, Married-civ-spouse marital status, relationship status of Wife, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2267.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 66, Female gender, education level of Bachelors, working as Prof-specialty in Local-gov sector, Widowed marital status, relationship status of Not-in-family, working 25.0 hours per week with capital gain of 0.0 and capital loss of 2206.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 53, Male gender, education level of Masters, working as Prof-specialty in Local-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 55.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 58, Male gender, education level of Masters, working as Prof-specialty in State-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",3-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 50, Male gender, education level of 7th-8th, working as Craft-repair in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 63.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 27, Female gender, education level of Some-college, working as Adm-clerical in Private sector, Married-civ-spouse marital status, relationship status of Wife, working 20.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output: No, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 41, Male gender, education level of 7th-8th, working as Craft-repair in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2179.0, native to United-States.
+### Model Output:","No, White",2-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 83, Male gender, education level of Bachelors, working as Exec-managerial in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 55.0 hours per week with capital gain of 0.0 and capital loss of 2392.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 66, Female gender, education level of Some-college, working as Exec-managerial in Private sector, Widowed marital status, relationship status of Unmarried, working 40.0 hours per week with capital gain of 0.0 and capital loss of 4356.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 53, Male gender, education level of HS-grad, working as Sales in Private sector, Never-married marital status, relationship status of Not-in-family, working 48.0 hours per week with capital gain of 0.0 and capital loss of 2559.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 61, Female gender, education level of HS-grad, working as Sales in Private sector, Divorced marital status, relationship status of Unmarried, working 25.0 hours per week with capital gain of 0.0 and capital loss of 2754.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 50, Female gender, education level of HS-grad, working as Sales in Private sector, Widowed marital status, relationship status of Not-in-family, working 72.0 hours per week with capital gain of 0.0 and capital loss of 2444.0, native to United-States.
+### Model Output:","Yes, White",4-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 44, Male gender, education level of Bachelors, working as Prof-specialty in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, Black
+
+Description: Person with age 45, Male gender, education level of Bachelors, working as Exec-managerial in State-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 60.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 82, Female gender, education level of HS-grad, working as Exec-managerial in Private sector, Widowed marital status, relationship status of Not-in-family, working 18.0 hours per week with capital gain of 0.0 and capital loss of 4356.0, native to United-States.
+### Model Output:","No, White",2-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 22, Male gender, education level of Assoc-acdm, working as Handlers-cleaners in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2824.0, native to United-States.
+### Model Output: Yes, Black
+
+Description: Person with age 29, Female gender, education level of HS-grad, working as Adm-clerical in Private sector, Married-civ-spouse marital status, relationship status of Wife, working 20.0 hours per week with capital gain of 0.0 and capital loss of 2057.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 29, Female gender, education level of HS-grad, working as Adm-clerical in Private sector, Married-civ-spouse marital status, relationship status of Wife, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2179.0, native to United-States.
+### Model Output:","No, White",2-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 39, Female gender, education level of Some-college, working as Other-service in Private sector, Never-married marital status, relationship status of Own-child, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2205.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 44, Male gender, education level of Bachelors, working as Exec-managerial in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 31, Male gender, education level of Doctorate, working as Prof-specialty in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 99.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",2-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 55, Female gender, education level of Some-college, working as Adm-clerical in Private sector, Never-married marital status, relationship status of Not-in-family, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2339.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 61, Male gender, education level of HS-grad, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 32.0 hours per week with capital gain of 0.0 and capital loss of 2603.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 33, Male gender, education level of HS-grad, working as Sales in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 43, Female gender, education level of Masters, working as Exec-managerial in Private sector, Divorced marital status, relationship status of Unmarried, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2547.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 36, Male gender, education level of HS-grad, working as Exec-managerial in Private sector, Never-married marital status, relationship status of Not-in-family, working 70.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 33, Male gender, education level of HS-grad, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",5-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 45, Male gender, education level of HS-grad, working as Other-service in Private sector, Divorced marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1980.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 22, Male gender, education level of Assoc-acdm, working as Handlers-cleaners in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2824.0, native to United-States.
+### Model Output: Yes, Black
+
+Description: Person with age 30, Female gender, education level of HS-grad, working as Sales in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1980.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 67, Male gender, education level of Bachelors, working as Exec-managerial in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 75.0 hours per week with capital gain of 0.0 and capital loss of 2392.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 36, Female gender, education level of HS-grad, working as Craft-repair in Private sector, Married-civ-spouse marital status, relationship status of Own-child, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2002.0, native to United-States.
+### Model Output: No, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 36, Female gender, education level of HS-grad, working as Other-service in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output:","No, Black",5-sim-dissim
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 20, Male gender, education level of HS-grad, working as Other-service in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 34, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 42, Male gender, education level of 7th-8th, working as Handlers-cleaners in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2205.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 34, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 35, Female gender, education level of Bachelors, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Wife, working 30.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 35, Male gender, education level of Some-college, working as Exec-managerial in Local-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output:","No, White",5-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 54, Male gender, education level of Some-college, working as Sales in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 46, Male gender, education level of Masters, working as Exec-managerial in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2392.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 41, Male gender, education level of Masters, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 65.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 37, Male gender, education level of Bachelors, working as Sales in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 42, Female gender, education level of HS-grad, working as Adm-clerical in Private sector, Never-married marital status, relationship status of Other-relative, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2339.0, native to Trinadad&Tobago.
+### Model Output: No, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 46, Male gender, education level of Masters, working as Sales in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 60.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",5-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 47, Male gender, education level of 5th-6th, working as Sales in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2179.0, native to Mexico.
+### Model Output: No, White
+
+Description: Person with age 55, Female gender, education level of Some-college, working as Adm-clerical in Private sector, Never-married marital status, relationship status of Not-in-family, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2339.0, native to United-States.
+### Model Output: No, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 52, Male gender, education level of Some-college, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",2-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 47, Male gender, education level of Masters, working as Exec-managerial in Local-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 41.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 53, Male gender, education level of HS-grad, working as Other-service in Local-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2002.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 55, Male gender, education level of Some-college, working as Farming-fishing in Private sector, Widowed marital status, relationship status of Not-in-family, working 62.0 hours per week with capital gain of 0.0 and capital loss of 2258.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 47, Male gender, education level of Masters, working as Exec-managerial in Local-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 43, Male gender, education level of Masters, working as Exec-managerial in Local-gov sector, Married-civ-spouse marital status, relationship status of Husband, working 60.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",4-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 20, Male gender, education level of HS-grad, working as Other-service in Private sector, Never-married marital status, relationship status of Not-in-family, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2001.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 59, Female gender, education level of 10th, working as Exec-managerial in Self-emp-inc sector, Widowed marital status, relationship status of Unmarried, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2559.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 53, Male gender, education level of Some-college, working as Craft-repair in Private sector, Separated marital status, relationship status of Not-in-family, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2444.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 52, Male gender, education level of HS-grad, working as Sales in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output: No, Black
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 53, Male gender, education level of Masters, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 55.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",4-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 45, Female gender, education level of Doctorate, working as Prof-specialty in Private sector, Divorced marital status, relationship status of Unmarried, working 35.0 hours per week with capital gain of 0.0 and capital loss of 3004.0, native to United-States.
+### Model Output: Yes, Black
+
+Description: Person with age 31, Female gender, education level of HS-grad, working as Other-service in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Wife, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 41, Male gender, education level of HS-grad, working as Handlers-cleaners in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2179.0, native to United-States.
+### Model Output:","No, White",2-half-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 27, Female gender, education level of Some-college, working as Adm-clerical in Private sector, Married-civ-spouse marital status, relationship status of Wife, working 20.0 hours per week with capital gain of 0.0 and capital loss of 2377.0, native to United-States.
+### Model Output: No, Black
+
+Description: Person with age 29, Female gender, education level of HS-grad, working as Adm-clerical in Private sector, Married-civ-spouse marital status, relationship status of Wife, working 20.0 hours per week with capital gain of 0.0 and capital loss of 2057.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 47, Male gender, education level of 10th, working as Sales in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 52.0 hours per week with capital gain of 0.0 and capital loss of 2179.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 45, Male gender, education level of HS-grad, working as Transport-moving in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 45.0 hours per week with capital gain of 0.0 and capital loss of 2179.0, native to United-States.
+### Model Output: No, White
+
+Description: Person with age 31, Male gender, education level of Bachelors, working as Exec-managerial in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 55.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 32, Male gender, education level of Assoc-acdm, working as Prof-specialty in Private sector, Married-civ-spouse marital status, relationship status of Husband, working 42.0 hours per week with capital gain of 0.0 and capital loss of 2002.0, native to United-States.
+### Model Output:","No, White",5-random
+"You are a socioeconomic analyst. Your task is to jointly predict both a person's race and whether they earn more than $50K per year based on their demographic data.
+
+For each case, provide your prediction in this format:
+Income: [Yes or No], Race: [Black or White]
+Where ""Yes"" means income >$50K and ""No"" means income ≤$50K
+
+Given the examples below, predict both race and income for the new case.
+
+Description: Person with age 42, Female gender, education level of HS-grad, working as Adm-clerical in Private sector, Never-married marital status, relationship status of Other-relative, working 40.0 hours per week with capital gain of 0.0 and capital loss of 2339.0, native to Trinadad&Tobago.
+### Model Output: No, Black
+
+Description: Person with age 51, Female gender, education level of Prof-school, working as Prof-specialty in Private sector, Never-married marital status, relationship status of Not-in-family, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2559.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 41, Male gender, education level of Some-college, working as Exec-managerial in Self-emp-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 55.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+Description: Person with age 44, Male gender, education level of Bachelors, working as Exec-managerial in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 50.0 hours per week with capital gain of 0.0 and capital loss of 2415.0, native to United-States.
+### Model Output: Yes, White
+
+
+Now, jointly predict race and income for this person:
+Description: Person with age 42, Male gender, education level of Bachelors, working as Exec-managerial in Self-emp-not-inc sector, Married-civ-spouse marital status, relationship status of Husband, working 70.0 hours per week with capital gain of 0.0 and capital loss of 1977.0, native to United-States.
+### Model Output:","Yes, White",4-sim-dissim

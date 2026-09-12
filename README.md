@@ -53,7 +53,39 @@ accuracy measured by the **spuriousness-score** metric.
 │
 ├── adult_census/               # Adult-Census benchmark (income + protected attribute)
 │   ├── fine_tune_adult.py
-│   └── adult_data.csv
+│   ├── adult_data.csv
+│   └── Adult_FT/                       # Joint race+income prompt experiments
+│       ├── create_prompt.py                # Build joint race/income prompts
+│       ├── fine_tune_adult.py              # Fine-tune Llama-2 on Adult (Answer: format)
+│       ├── fine_tune_adult_model_output_format.py  # Variant using "### Model Output:" format
+│       ├── MPtune_adult.py                 # Multi-prompt tuning on Adult
+│       ├── baseline_accuracy.py            # Zero-shot baseline accuracy
+│       ├── fine_tune_accuracy.py           # Evaluate the fine-tuned model
+│       ├── MMLU_results.py                 # MMLU capability check
+│       └── census_joint_race_income_{train,test}_prompts.csv
+│
+├── fine_tune_filtered/         # Bias-in-Bios with a filtered/updated custom loss
+│   ├── llama-2_custom_loss_updated.py      # Multi-task loss (updated)
+│   ├── llama2_custom_loss_updated_v2.py    # New format-loss variant (v2)
+│   ├── test_llama2.ipynb                   # Evaluation across prompt types
+│   ├── possible_token_stream.json          # Valid output-token stream for format loss
+│   ├── *_idx_for_prompt_sel_from_ICE.csv   # ICE selection indices
+│   └── *results*.json                      # Example run logs/results
+│
+├── jigsaw/                     # ToxicBias / Jigsaw toxicity benchmark
+│   ├── create_prompt.ipynb                 # Prompt construction
+│   ├── data.ipynb                          # Data preparation
+│   ├── fine_tune_llama2.py                 # Fine-tuning on toxicity task
+│   └── test_llama2.ipynb                   # Evaluation
+│
+├── RT_gender/                  # RT-Gender benchmark (response + author gender)
+│   ├── create_prompt.ipynb                 # Prompt construction
+│   ├── fine_tune_llama2.py                 # Llama-2 fine-tuning
+│   ├── llama3_fine_tune.py                 # Llama-3 fine-tuning
+│   ├── unbiased_classifier.ipynb           # Unbiased-classifier analysis
+│   ├── spuriousness_classification_llama2_RT.ipynb  # Spuriousness-score analysis
+│   ├── test_llama2.ipynb / test_llama3.ipynb        # Evaluation
+│   └── annotations.csv                     # RT-Gender annotations
 │
 ├── mmlu_test/                  # MMLU main-task capability evaluation
 │   ├── run_inference.py                # 5-shot MMLU evaluation harness
@@ -68,9 +100,16 @@ accuracy measured by the **spuriousness-score** metric.
 └── data/README.md              # How to obtain the large .npy prompt tensors
 ```
 
-The original research scripts (under `bios/`, `adult_census/`, `mmlu_test/`) are
-kept as-is for reference. A cleaned-up, reusable implementation of the
-Bias-in-Bios pipeline lives under [modular/](modular/README.md).
+The original research scripts (under `bios/`, `adult_census/`, `fine_tune_filtered/`,
+`jigsaw/`, `RT_gender/`, `mmlu_test/`) are kept as-is for reference. A cleaned-up,
+reusable implementation of the Bias-in-Bios pipeline lives under
+[modular/](modular/README.md).
+
+> **Note on data.** Large raw corpora for some benchmarks are **not** committed:
+> the Jigsaw `all_data.csv` (~874 MB) and the RT-Gender post/response CSVs
+> (`reddit_*`, `ted_*`, `fitocracy_*`, `facebook_*`, hundreds of MB each). Only
+> code, notebooks, prompt-selection indices, and lightweight annotation/prompt
+> files are included. Download the raw datasets from their original sources.
 
 ## Setup
 

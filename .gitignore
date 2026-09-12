@@ -11,6 +11,16 @@ env/
 # Large tokenized prompt tensors (not committed — see data/README.md)
 *.npy
 
+# Large raw benchmark corpora (not committed — download from original sources)
+jigsaw/all_data.csv
+RT_gender/reddit_posts.csv
+RT_gender/reddit_responses.csv
+RT_gender/ted_responses.csv
+RT_gender/fitocracy_posts.csv
+RT_gender/fitocracy_responses.csv
+RT_gender/facebook_wiki_posts.csv
+RT_gender/facebook_congress_posts.csv
+
 # Model checkpoints / weights
 *.pt
 *.pth
