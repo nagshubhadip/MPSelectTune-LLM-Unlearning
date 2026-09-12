@@ -1,0 +1,10 @@
+torch>=2.0
+transformers>=4.36
+datasets>=2.14
+peft>=0.7
+trl>=0.7
+bitsandbytes>=0.41
+accelerate>=0.25
+huggingface_hub>=0.19
+numpy>=1.24
+pandas>=2.0
